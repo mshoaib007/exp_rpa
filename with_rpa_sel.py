@@ -184,7 +184,7 @@ for a in soup2.find_all('a',href=True):
 print(len(links))
 print(links)
 ll1=[]
-for i in range(3):
+for i in range(11):
     ll1.append(links[i])
 for i in ll1:
     up=url+i
