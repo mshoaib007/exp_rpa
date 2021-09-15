@@ -181,10 +181,8 @@ for a in soup2.find_all('a',href=True):
     links.append(a['href'])
 print(len(links))
 print(links)
-up=url+links[0]
-browser.go_to(up)
-time.sleep(10)
-browser.click_link('Download Business Case PDF')
+
+
 ll1=[]
 for i in range(10):
     ll1.append(links[i])
