@@ -199,4 +199,4 @@ for i in ll1:
     time.sleep(15)
 browser.close_all_browsers()
 
-print(os.listdir("path"))
+print(os.listdir(download_dir))
