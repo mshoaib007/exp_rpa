@@ -185,15 +185,19 @@ up=url+links[0]
 browser.go_to(up)
 time.sleep(10)
 browser.click_link('Download Business Case PDF')
-#for i in links:
-#    up=url+i
-#    browser.go_to(up)
-#    time.sleep(10)
-#    browser.click_link('Download Business Case PDF')
-#    time.sleep(10)
-#    browser.go_back()
-#    browser.go_back()
-#    time.sleep(10)
-#    browser.select_from_list_by_label('investments-table-object_length','All')
-#    time.sleep(15)
+ll1=[]
+for i in range(10):
+    ll1.append(links[i])
+for i in ll1:
+    up=url+i
+    browser.go_to(up)
+    time.sleep(10)
+    browser.click_link('Download Business Case PDF')
+    time.sleep(10)
+    browser.go_back()
+    browser.go_back()
+    time.sleep(10)
+    browser.select_from_list_by_label('investments-table-object_length','All')
+    time.sleep(15)
 browser.close_all_browsers()
+
