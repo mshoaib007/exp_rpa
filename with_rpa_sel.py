@@ -183,8 +183,10 @@ for a in soup2.find_all('a',href=True):
     links.append(a['href'])
 print(len(links))
 print(links)
+len_links=len(links)
+half_links=len_links//2
 ll1=[]
-for i in range(11):
+for i in range(half_links):
     ll1.append(links[i])
 for i in ll1:
     up=url+i
